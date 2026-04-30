@@ -1,20 +1,18 @@
 //import React from 'react'
 import CharacterCounter from "./components/CharacterCounter/CharacterCounter";
+//import Nav from "./components/Nav/Nav";
 // import StatsDisplay from './components/StatsDisplay/StatsDisplay';
-import './App.css'
+import "./App.css";
 
 function App() {
- 
-
   return (
-    <>
-      <section id="center">
+    <div id="app-container">
+      <main id="center">
         <CharacterCounter />
-       
-      </section>
+      </main>
+    </div>
 
-    </>
-  )
+  );
 }
 
-export default App
+export default App;
