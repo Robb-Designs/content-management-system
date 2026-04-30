@@ -48,16 +48,29 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+    --color-primary:         #F07FAA;
+    --color-primary-hover:   #F49DB6;
+    --color-primary-active:  #E85D8A;
+    --color-secondary:       #E85D8A;
+    --color-accent:          #C96A8A;
+    --color-accent-bg:       rgba(240, 127, 170, 0.12);
+    --color-accent-border:   rgba(240, 127, 170, 0.35);
+
+    /* Backgrounds */
+    --color-bg:              #1C0C12;
+    --color-bg-subtle:       #261018;
+    --color-bg-muted:        #33141F;
+    --color-code-bg:         #261018;
+
+    /* Text */
+    --color-text:            #D4A0B0;
+    --color-text-heading:    #FFE8EF;
+    --color-text-muted:      #8A5568;
+
+    /* Borders & shadows */
+    --color-border:          #4A2030;
+    --color-shadow:
+      rgba(0, 0, 0, 0.45) 0 10px 15px -3px,
+      rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
 }
