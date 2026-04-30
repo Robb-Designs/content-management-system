@@ -55,8 +55,8 @@ function CharacterCounter({ minWords = 50, maxWords = 100 }: CharacterCounterPro
       {/* Stats panel receives latest computed values from parent state. */}
       <StatsDisplay stats={stats} showReadingTime={true} />
 
-      <section aria-live="polite">
-        <h2>Word Goal</h2>
+      <section aria-live="polite" className="flex flex-col gap-3 pt-4 border-t border-(--color-border)">
+        <h2 className="text-lg font-semibold text-[var(--color-text-heading)]">Word Goal</h2>
         <p>
           Progress: {stats.wordCount}/{maxWords} words
         </p>
