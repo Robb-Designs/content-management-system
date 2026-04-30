@@ -56,15 +56,18 @@ function CharacterCounter({ minWords = 50, maxWords = 100 }: CharacterCounterPro
       <StatsDisplay stats={stats} showReadingTime={true} />
 
       <section aria-live="polite" className="flex flex-col gap-3 pt-4 border-t border-(--color-border)">
-        <h2 className="text-lg font-semibold text-[var(--color-text-heading)]">Word Goal</h2>
-        <p>
+        <h2 className="text-lg font-semibold text-(--color-text-heading)">Word Goal</h2>
+        <p className="text-sm text-(--color-text-muted)">
           Progress: {stats.wordCount}/{maxWords} words
         </p>
-        <progress value={Math.min(stats.wordCount, maxWords)} max={maxWords}>
-          {progressPercentage.toFixed(0)}%
+        <progress
+            className="w-full h-2 rounded-full accent-(--color-primary)"
+            value={Math.min(stats.wordCount, maxWords)} 
+            max={maxWords}>
+            {progressPercentage.toFixed(0)}%
         </progress>
-        <p>Status: {wordGoalStatus}</p>
-        <p>
+        <p >Status: {wordGoalStatus}</p>
+        <p className="text-sm text-(--color-text-muted)">
           Target range: {minWords} - {maxWords} words
         </p>
       </section>
