@@ -1,17 +1,34 @@
 @import "tailwindcss";
 
 :root {
-    /* Core palette */
-  --color-primary:         #E85D8A;
-  --color-primary-hover:   #D4476F;
-  --color-primary-active:  #BF3460;
-  --color-secondary:       #F49DB6;
-  --color-accent:          #F7B8CC;
-  --color-accent-bg:       rgba(232, 93, 138, 0.08);
-  --color-accent-border:   rgba(232, 93, 138, 0.3);
+  /* Core palette */
+  --color-primary: #e85d8a;
+  --color-primary-hover: #d4476f;
+  --color-primary-active: #bf3460;
+  --color-secondary: #f49db6;
+  --color-accent: #f7b8cc;
+  --color-accent-bg: rgba(232, 93, 138, 0.08);
+  --color-accent-border: rgba(232, 93, 138, 0.3);
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  /* Backgrounds */
+  --color-bg: #fff9f9;
+  --color-bg-subtle: #fff0f3;
+  --color-bg-muted: #fae8ee;
+  --color-code-bg: #fff0f3;
+
+  /* Text */
+  --color-text: #7a3a4e;
+  --color-text-heading: #2a0e1c;
+  --color-text-muted: #b07a8e;
+
+  /* Borders & shadows */
+  --color-border: #f2c4d0;
+  --color-shadow:
+    rgba(232, 93, 138, 0.08) 0 10px 15px -3px,
+    rgba(232, 93, 138, 0.04) 0 4px 6px -2px;
+
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -43,7 +60,4 @@
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
-
-  
 }
-
