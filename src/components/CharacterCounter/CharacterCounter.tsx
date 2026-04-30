@@ -44,7 +44,7 @@ function CharacterCounter({ minWords = 50, maxWords = 100 }: CharacterCounterPro
     maxWords > 0 ? Math.min((stats.wordCount / maxWords) * 100, 100) : 0;
 
   return (
-    <section>
+    <section className="flex flex-col gap-6 p-8 rounded-2xl bg-[var(--color-bg-subtle)] border border-[var(--color-border)] shadow-[var(--color-shadow)]">
       <h1>Character Counter</h1>
 
       <TextInput
