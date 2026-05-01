@@ -3,6 +3,12 @@
 A live character and word counter built with React, TypeScript, and Tailwind CSS v4. Tracks character count, word count, and estimated reading time as you type, with configurable word-goal progress feedback.
 
 ---
+
+## Overview
+
+Character Counter is a single-page application that tracks text statistics as you type. It provides feedback on character count, word count, estimated reading time, and progress toward a configurable word-count goal.
+
+
 ## Features
 
 - Live character count (includes spaces and punctuation)
