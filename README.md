@@ -1,6 +1,6 @@
 # Character Counter
 
-A live character and word counter built with React, TypeScript, and Tailwind CSS v4. Tracks character count, word count, and estimated reading time as you type, with configurable word-goal progress feedback.
+A live character and word counter built with React, TypeScript, and Tailwind CSS v4.
 
 ---
 
