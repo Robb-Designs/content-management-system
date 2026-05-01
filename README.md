@@ -38,3 +38,10 @@ src/
 └── TextInput/
 └── TextInput.tsx # Controlled text input
 ```
+
+
+## Reflection: My Thoughts
+
+During this build, there were a couple of concepts I explored more deeply. Implementing `useState` for example; I used two separate useState hooks — one hook for the string value and the other hook for the computed stats. So, when a user types in the input, it'll call `{handleTextChange}` which updates both of my states in the same function call. I kept `text` and `stats` as separate state values because they serve different roles. `text` is the controlled value that feeds back into the input, while `stats` is the output computed from `text`. Having them together in one useState object felt unnecessary; I felt Combining them into a single state object would have conflated the two different concerns.
+
+The main challenge was making word counting reliable across edge cases. A simple split on spaces breaks with multiple consecutive spaces or trailing whitespace, reporting phantom words. I solved this by trimming the string first and then splitting on `/\s+/` to match any whitespace sequence. I also had to explicitly guard against the empty string case, since splitting an empty string still returns a one-element array.
