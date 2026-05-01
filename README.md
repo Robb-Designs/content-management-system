@@ -18,3 +18,23 @@ Character Counter is a single-page application that tracks text statistics as yo
 - Under / on track / over status feedback
 - Rose and peach themed design with full dark mode support
 - Responsive layout down to mobile widths
+
+
+## Project Structure
+
+```
+src/
+├── App.tsx
+├── App.css
+├── index.css
+├── main.tsx
+├── types/
+│ └── index.ts # Shared TypeScript interfaces
+└── components/
+├── CharacterCounter/
+│ └── CharacterCounter.tsx # Root feature component
+├── StatsDisplay/
+│ └── StatsDisplay.tsx # Renders character, word, and reading time stats
+└── TextInput/
+└── TextInput.tsx # Controlled text input
+```
